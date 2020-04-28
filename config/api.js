@@ -3,12 +3,12 @@ var apiai = require('apiai');
 // read the api.ai docs : https://api.ai/docs/
 
 //Enter your API Key
-var app = apiai('2007fee6c3d14ef889535eb0fc8b181b');
+var app = apiai('0e441aec88394907b6c6f9068f9549ae');
 
 // Function which returns speech from api.ai
 var getRes = function(query) {
   var request = app.textRequest(query, {
-      sessionId: '<unique session id>'
+      sessionId: 'chatbot'
   });
 const responseFromAPI = new Promise(
         function (resolve, reject) {
